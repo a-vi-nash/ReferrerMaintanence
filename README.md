@@ -9,11 +9,11 @@ This is a python script which will maintain the user and referrer relationship a
 1. addNewData(name,referred_by)
   * this will add a new user to the system
 
-1. showAllData()
+2. showAllData()
   * this will show all the data present in the system.
 
 
-#Logic:
+# Logic:
 1. currently all the data is saved and retrieved from a file for persistance.
 1. If a user A is entered and he is not refereed by anyone, he becomes the parent with no parent, hence his referred_by field will be None and referred_count will be 0.
 1. Now if a user B enters who is referred by A, then his referred_by field will contain A and count 0, and for A the count will become 1
